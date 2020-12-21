@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RoomWex</title>
+	<link rel="shortcut icon" type="img/x-icon" href="logo.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<link rel = "preconnect" href = "https://fonts.gstatic.com">
+	<link href = "https://fonts.googleapis.com/css2? family = Poppins: wght @ 300 & display = swap" rel = "hoja de estilo">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<meta name="viewport" content="widht-device-widht, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+	<header>	
+		<nav>
+		 	<a href="#"><span>Ver peliculas</span></a>		 	
+		 <div class="logo">
+			<img src="RoomWexlogo.png">
+		</div>
+		</nav>
+		<section class="textos-header">
+			<h1>Películas series ilimitadas</h1>
+			<h1>y mucho más.</h1>
+			<h3>Todo lo que quieras. Cuando quieras. En un mismo lugar.</h3>
+			<h4>¿Deseas ver RoomWex ya? Inicia sesion o dale click en "ver peliculas".</h4>
+			<p><a href="login.html"><span>INICIAR SESION ➤</span></a></p>
+		</section>
+		<div class="banner">
+			<img src="bj.jpg" height="769px">
+		</div>	
+	</header>
+	<main>
+		<section class="computador">
+			<div class="banner-2"></div>
+			<div class="contenedor">
+			<h1 class="titulo">Disfruta en tu PC.</h1>
+			<h2 class="contenedor-computador">Disponible tambien para celulares por <br> GoogleChrome</h2>
+			<div class="contenedor-computador">
+				<img src="tv.png"><br> 
+				<video loop>
+    			<source src="video-tv-.m4v">
+				</video>
+			</div>
+			</div>
+		</section>
+		<section class="descargar">
+			<div class="contenedor">
+			<h1 class="titulo-descargar">Descarga tus peliculas para verlas oflline.</h1>
+			<h2 class="titulo-descargar-h2">Guarda tu contenido favorito para momentos especiales donde estes offline</h2>
+			<div class="contenedor-descargar">
+				<img src="mobile-08.jpg">
+				<img src="boxshot.png">
+				<img src="downloadcircular.png">
+			</div>
+			</div>
+		</section>
+		</main>
+	<footer>
+		<h2 class="titulo-final">&copy; RoomWez Design | RoomWex</h2>
+	</footer>
+
+
+	<div id="progressbar"></div>
+	<div id="scrollPhat"></div>
+	<script type="text/javascript">
+		let progress = document.getElementById('progressbar');
+		let totalHeight = document.body.scrollHeight - window.innerHeight;
+		window.onscroll = function(){
+			let progressHeight = (window.pageYOffset /
+			  totalHeight) * 100;
+		progress.style.height = progressHeight + "%";
+		} 
+	</script>
+	</div>
+</body>
+</html>
