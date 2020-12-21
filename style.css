@@ -1,0 +1,280 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	font-family: 'Opens Sans',sans-serif;
+}
+/* Header */
+
+.header
+{
+	width: 100%;
+	height: 600px;
+	background: #4D4D4D;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative; 
+	z-index: 30;
+
+}
+nav
+{
+	text-align: right;
+	padding: 40px 30px 0 0;
+}
+nav a
+{
+	top:20px;
+	right: 40px;
+	position: absolute;
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid transparent;
+	border-radius: 20px;
+	background-image: linear-gradient(#167670,#3F1164),radial-gradient(circle at top left,#fd00da,#19d7f8);
+	background-origin: border-box;
+	background-clip: content-box,border-box;
+	
+}
+nav a span
+{
+	display: block;
+	padding: 8px 22px;
+}
+nav a:hover
+{
+	background-image: linear-gradient(#29D3C9,#7F23CD),radial-gradient(circle at top left,#CA02AF,#12A7C1);
+	box-shadow: 0 0 10px #B32CD8, 0 0 40px #0054B9, 0 0 80px #00FFF0;
+}
+
+nav .logo
+{
+	text-align: left;
+	padding: 1px 40px;
+	position: absolute;
+	bottom: 546px;	
+
+}
+header .textos-header
+{
+	display:flex;
+	height: 430px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	z-index: 30;
+
+}
+.textos-header h1
+{
+	font-size: 50px;
+	color: #fff;
+	z-index: 30;
+}
+.textos-header h3
+{
+	font-size: 30px;
+	color: #fff;
+	font-weight: 700;
+	padding: 20px 0px;
+	z-index: 30;
+
+}
+.textos-header h4
+{
+	font-size: 19px;
+	font-weight: 100;
+	color: #fff;
+	z-index: 30;
+	padding: 
+            
+
+}
+.textos-header p
+{
+	top: 20px;
+	position: relative;
+	text-decoration: none;
+	color: #000;
+	border: 2px solid transparent;
+	border-radius: 20px;
+	background-image: linear-gradient(#167670,#3F1164),radial-gradient(circle at top left,#fd00da,#19d7f8);
+	background-origin: border-box;
+	background-clip: content-box,border-box;
+}
+.textos-header p span
+{
+	display: block;
+	padding: 15px 22px;
+}
+.textos-header p:hover
+{
+	background-image: linear-gradient(#29D3C9,#7F23CD),radial-gradient(circle at top left,#CA02AF,#12A7C1);
+	box-shadow: 0 0 10px #B32CD8, 0 0 40px #0054B9, 0 0 80px #00FFF0;
+}
+
+.textos-header a
+{
+	color: #fff;
+	text-decoration: none;
+	z-index: 30;
+
+}
+.logo img
+{
+	width: 200px; 
+	height: 70px;
+	text-align: left;
+	z-index: 30;
+
+	
+}
+
+
+.banner
+{
+
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	bottom: 7px;
+	background-color: rgba(0,0,0,0.8); 
+  	max-width: 120%;
+  	filter:brightness(0.2);
+  	background-image: 100%;
+  	z-index: -1;
+  	position: relative;
+  	bottom: 500px;
+  	left: 0;
+  	height: 100px;
+  	width: 100px;
+}
+
+/* Contenedor */
+.contenedor
+{
+	padding: 0px 0;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	z-index: -1;
+}
+
+.computador
+{
+	background: #000;
+}
+.computador h1
+{
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 60px;
+	color: #fff;
+	text-align: left;
+	padding: 90px 1px;
+
+}
+.computador h2
+{
+	color: #fff;
+	padding: 0px 0px;
+	position: relative;
+	flex-direction: column;
+	position: relative;
+	bottom: 120px;
+	font-weight: 200;
+	font-size: 25px;
+	text-align: left;
+}
+
+.computador
+{
+	position: relative;
+	bottom: 435px;
+}
+
+.contenedor-computador img
+{
+ 	display: flex;
+ 	width: 500px;
+ 	height: 400px;
+
+ }
+
+.contenedor-computador video
+{
+ 	width: 100%;
+}
+
+/* Progressbar */
+
+{
+	font-size: 1.2em;
+	color: #fff;
+}
+::-webkit-scrollbar
+{
+	width: 0;	
+}
+#scrollPath
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: rgba(255,255,255,00.5);
+}
+#progressbar
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	background: linear-gradient(to top, #008aff,#00ffe7)
+		;
+	animation: animate 5s linear infinite;
+}
+@keyframes animate 
+{
+	0%,100%
+	{
+		filter: hue-rotate(0deg);
+	}
+	50%
+	{
+		filter: hue-rotate(360deg);
+	}
+}
+#progressbar:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff,#00ffe7);
+	filter: blur(10px);
+}
+#progressbar:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+	background: linear-gradient(to top, #008aff,#00ffe7)
+		;
+	filter: blur(30px);
+}
